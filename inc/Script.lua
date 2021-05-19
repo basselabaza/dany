@@ -1214,7 +1214,7 @@ if redis:get(dany.."getidstatus"..msg.chat_id_) == "Photo" then
 		}
 		ssssys = ali[math.random(#ali)]
 		if not redis:get("KLISH:ID") then
-		sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,' \n• ɴᴀᴍᴇ 𖦹  '..Name..' .\n• ɪᴅsᴛᴀ 𖦹  '..msg.sender_user_id_..' .\n• sᴛᴀ 𖦹  '..msg.TheRank..' .\n• ᴜsᴇʀ 𖦹  '..UserNameID..' .\n.',dl_cb,nil)
+		sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,' \n• ᴜsᴇʀ 𖦹  '..UserNameID..' .\n• ᴍsɢs 𖦹  '..msgs..' .\n• sᴛᴀ 𖦹  '..msg.TheRank..' .\n• ɪᴅsᴛᴀ 𖦹  '..msg.sender_user_id_..' .\n',dl_cb,nil)
 		else
 		Text = redis:get("KLISH:ID")
 		Text = Text:gsub('IDGET',msg.sender_user_id_)
@@ -1229,7 +1229,7 @@ if redis:get(dany.."getidstatus"..msg.chat_id_) == "Photo" then
 		end
 	else
 		if not redis:get("KLISH:ID") then
-		sendMsg(msg.chat_id_,msg.id_,'•لا يمكنني عرض صورتك لانك قمت بحظر البوت او انك لاتملك صوره في بروفيلك ...! \n•ɴᴀᴍᴇ 𖦹 '..UserNameID..' .\n•  ɪᴅsᴛᴀ 𖦹 '..msgs..' .\n• sᴛᴀ 𖦹  '..msg.TheRank..' .\n•• ᴜsᴇʀ 𖦹   '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @ZU_XUXU .\n▿▿▿')
+		sendMsg(msg.chat_id_,msg.id_,'•لا يمكنني عرض صورتك لانك قمت بحظر البوت او انك لاتملك صوره في بروفيلك ...! \n• ᴜsᴇʀ 𖦹 '..UserNameID..' .\n• ᴍsɢs 𖦹 '..msgs..' .\n• sᴛᴀ 𖦹 '..msg.TheRank..' .\n• ɪᴅsᴛᴀ 𖦹  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @QZZZYQ .\n▿▿▿')
 		else
 		Text = redis:get("KLISH:ID")
 		Text = Text:gsub('IDGET',msg.sender_user_id_)
@@ -1256,7 +1256,7 @@ else
 		Text = Text:gsub('User_Points',nko)
 		sendMsg(msg.chat_id_,msg.id_,Flter_Markdown(Text))
 		else
-		sendMsg(msg.chat_id_,msg.id_,'•الايدي بالصوره معطل   \n•ɴᴀᴍᴇ 𖦹'..UserNameID..' .\n•  ɪᴅsᴛᴀ 𖦹'..msgs..' .\n• sᴛᴀ 𖦹  '..msg.TheRank..' .\n•• ᴜsᴇʀ 𖦹   '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @ZU_XUXU .')
+		sendMsg(msg.chat_id_,msg.id_,'•الايدي بالصوره معطل   \n• ᴜsᴇʀ 𖦹'..UserNameID..' .\n• ᴍsɢs 𖦹'..msgs..' .\n• sᴛᴀ 𖦹 '..msg.TheRank..' .\n• ɪᴅsᴛᴀ 𖦹  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @QZZZYQ .')
 		end
 end
 
@@ -1921,8 +1921,8 @@ end
 if (MsgText[1]== "ايدي" or MsgText[1]=="ايديي🆔") and msg.type == "pv" then return  "\n⋆اهلاً عزيزي المطور ايديك :\n\n⋆"..msg.sender_user_id_.."\n"  end
 
 if MsgText[1]== "قناة السورس" and msg.type == "pv" then
-local inline = {{{text="-قنآهہ‏‏ آلسـورس اضـغـط هـنـآ ",url="https://t.me/ZU_XUXU"}}}
-send_key(msg.sender_user_id_,'   [قناة سورس : دانـي](https://t.me/ZU_XUXU)' ,nil,inline,msg.id_)
+local inline = {{{text="-قنآهہ‏‏ آلسـورس اضـغـط هـنـآ ",url="https://t.me/QZZZYQ"}}}
+send_key(msg.sender_user_id_,'   [قناة سورس : دانـي](https://t.me/QZZZYQ)' ,nil,inline,msg.id_)
 return false
 end
 
@@ -2101,7 +2101,7 @@ return [[
 ⌯︙ م3 «» اوامر الحماية‌‏
 ⌯︙ م4 «» اوامر الخدمه 
 ⌯︙ م5 «»  اوامر المطور
-⌯︙ .[قـنـاه الـسـورس](t.me/ZU_XUXU) 
+⌯︙ .[قـنـاه الـسـورس](t.me/QZZZYQ) 
 ⌯︙ [ مـطـور الـسـورس ](t.me/UU_IV)
 ܀⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤܀
 ⌯︙ ** لـلإسـتـفـسـار ↤︎ ]]..SUDO_USER
@@ -2347,7 +2347,7 @@ local keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '- SOURCE DEV .',url="https://t.me/ZU_XU"}},
 {{text = '- SOURCE DEV .',url="https://t.me/QpsspQ"}},
-{{text = '- 𝐬𝐨𝐮𝐫𝐜𝐞 .',url="https://t.me/ZU_XUXU"}},
+{{text = '- 𝐬𝐨𝐮𝐫𝐜𝐞 .',url="https://t.me/QZZZYQ"}},
 }   
 send_inline(msg.chat_id_,  "𓆩 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒔𝒐𝒖𝒓𝒄𝒆  𓆪" ,keyboard,'html')
 end
@@ -4025,28 +4025,28 @@ elseif Text:match(Bot_Name.."كيفك") then
   --=====================================
 elseif Text== "انا مين" or Text== "مين انا"  then
 if msg.SudoUser then  
-return sendMsg(msg.chat_id_,msg.id_,"[انت مطوري الغالي ♕](https://t.me/ZU_XUXU) ")
+return sendMsg(msg.chat_id_,msg.id_,"[انت مطوري الغالي ♕](https://t.me/QZZZYQ) ")
 elseif msg.Creator then 
-return sendMsg(msg.chat_id_,msg.id_,"[انت منشئ المجموعه  تاج راسي♔](https://t.me/ZU_XUXU)")
+return sendMsg(msg.chat_id_,msg.id_,"[انت منشئ المجموعه  تاج راسي♔](https://t.me/QZZZYQ)")
 elseif msg.Director then 
-return sendMsg(msg.chat_id_,msg.id_,"[انت مدير المجموعه๑](https://t.me/ZU_XUXU)")
+return sendMsg(msg.chat_id_,msg.id_,"[انت مدير المجموعه๑](https://t.me/QZZZYQ)")
 elseif msg.Admin then 
-return sendMsg(msg.chat_id_,msg.id_,"[انت ادمن شد حيلك♘](https://t.me/ZU_XUXU)")
+return sendMsg(msg.chat_id_,msg.id_,"[انت ادمن شد حيلك♘](https://t.me/QZZZYQ)")
 else 
-return sendMsg(msg.chat_id_,msg.id_,"[مجرد عضو هنا 𖦹](https://t.me/ZU_XUXU)")
+return sendMsg(msg.chat_id_,msg.id_,"[مجرد عضو هنا 𖦹](https://t.me/QZZZYQ)")
 end 
 end 
 elseif Text== "مين ضافني" or Text== "منو ضافني"  then
 if msg.SudoUser then  
-return sendMsg(msg.chat_id_,msg.id_,"[انت مكانك كل مكان يا مطور♕](https://t.me/ZU_XUXU) ")
+return sendMsg(msg.chat_id_,msg.id_,"[انت مكانك كل مكان يا مطور♕](https://t.me/QZZZYQ) ")
 elseif msg.Creator then 
-return sendMsg(msg.chat_id_,msg.id_,"[انت منشئ المجموعه](https://t.me/ZU_XUXU)")
+return sendMsg(msg.chat_id_,msg.id_,"[انت منشئ المجموعه](https://t.me/QZZZYQ)")
 elseif msg.Director then 
-return sendMsg(msg.chat_id_,msg.id_,"[انت دخلت عبر الرابط](https://t.me/ZU_XUXU)")
+return sendMsg(msg.chat_id_,msg.id_,"[انت دخلت عبر الرابط](https://t.me/QZZZYQ)")
 elseif msg.Admin then 
-return sendMsg(msg.chat_id_,msg.id_,"[انت دخلت عبر الرابط](https://t.me/ZU_XUXU)")
+return sendMsg(msg.chat_id_,msg.id_,"[انت دخلت عبر الرابط](https://t.me/QZZZYQ)")
 else 
-return sendMsg(msg.chat_id_,msg.id_,"[انت دخلت عبر الرابط](https://t.me/ZU_XUXU)")
+return sendMsg(msg.chat_id_,msg.id_,"[انت دخلت عبر الرابط](https://t.me/QZZZYQ)")
 end
 
 

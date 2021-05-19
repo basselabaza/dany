@@ -1153,7 +1153,7 @@ return sendMsg(msg.chat_id_,msg.id_,'- **عذرا البوت ليس ادمن  ف
 else
 local lock_service = redis:get(dany..'lock_service')
 if lock_service then 
-sendMsg(msg.chat_id_,msg.id_,'⋆* تم تفعيل المجموعه بنجاح .  𖠭 . \n*⋆ ورفع كل المشرفين\n [ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙴𝙻 𖣫 ](t.me/UU_DANY)')
+sendMsg(msg.chat_id_,msg.id_,'⋆* تم تفعيل المجموعه بنجاح .  𖠭 . \n*⋆ ورفع كل المشرفين\n [زَيِـــوُسْ ⚡️](t.me/QZZZYQ)')
 else
 sendMsg(msg.chat_id_,msg.id_,'⋆تـم تـفـعـيـل آلمـجمـوعه‏‏ \n↯')
 end
