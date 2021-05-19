@@ -1214,7 +1214,7 @@ if redis:get(dany.."getidstatus"..msg.chat_id_) == "Photo" then
 		}
 		ssssys = ali[math.random(#ali)]
 		if not redis:get("KLISH:ID") then
-		sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,' \n• ᴜsᴇʀ 𖦹  '..UserNameID..' .\n• ᴍsɢs 𖦹  '..msgs..' .\n• sᴛᴀ 𖦹  '..msg.TheRank..' .\n• ɪᴅsᴛᴀ 𖦹  '..msg.sender_user_id_..' .\n',dl_cb,nil)
+		sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,' \n• ᴜsᴇʀ 𖦹  '..UserNameID..' .\n• ᴍsɢs 𖦹  '..msgs..' .\n• sᴛᴀ 𖦹 '..msg.TheRank..' .\n• ɪᴅsᴛᴀ 𖦹  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @QZZZYQ .\n▿▿▿',dl_cb,nil)
 		else
 		Text = redis:get("KLISH:ID")
 		Text = Text:gsub('IDGET',msg.sender_user_id_)
