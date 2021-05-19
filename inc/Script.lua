@@ -1214,7 +1214,7 @@ if redis:get(dany.."getidstatus"..msg.chat_id_) == "Photo" then
 		}
 		ssssys = ali[math.random(#ali)]
 		if not redis:get("KLISH:ID") then
-		sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,' \n• ᴜsᴇʀ 𖦹  '..UserNameID..' .\n• ᴍsɢs 𖦹  '..msgs..' .\n• sᴛᴀ 𖦹 '..msg.TheRank..' .\n• ɪᴅsᴛᴀ 𖦹  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @QZZZYQ .\n▿▿▿',dl_cb,nil)
+		sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,' \n• USE 𖦹 '..UserNameID..' .\n• MSG 𖥳  '..msgs..' .\n• STA 𖦹 '..msg.TheRank..' .\n• iD 𖥳  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @QZZZYQ .\n▿▿▿',dl_cb,nil)
 		else
 		Text = redis:get("KLISH:ID")
 		Text = Text:gsub('IDGET',msg.sender_user_id_)
@@ -1229,7 +1229,7 @@ if redis:get(dany.."getidstatus"..msg.chat_id_) == "Photo" then
 		end
 	else
 		if not redis:get("KLISH:ID") then
-		sendMsg(msg.chat_id_,msg.id_,'•لا يمكنني عرض صورتك لانك قمت بحظر البوت او انك لاتملك صوره في بروفيلك ...! \n• ᴜsᴇʀ 𖦹 '..UserNameID..' .\n• ᴍsɢs 𖦹 '..msgs..' .\n• sᴛᴀ 𖦹 '..msg.TheRank..' .\n• ɪᴅsᴛᴀ 𖦹  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @QZZZYQ .\n▿▿▿')
+		sendMsg(msg.chat_id_,msg.id_,'•لا يمكنني عرض صورتك لانك قمت بحظر البوت او انك لاتملك صوره في بروفيلك ...! \n• USE 𖦹 '..UserNameID..' .\n• MSG 𖥳 '..msgs..' .\n• STA 𖦹 '..msg.TheRank..' .\n• iD 𖥳  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @QZZZYQ .\n▿▿▿')
 		else
 		Text = redis:get("KLISH:ID")
 		Text = Text:gsub('IDGET',msg.sender_user_id_)
@@ -1256,7 +1256,7 @@ else
 		Text = Text:gsub('User_Points',nko)
 		sendMsg(msg.chat_id_,msg.id_,Flter_Markdown(Text))
 		else
-		sendMsg(msg.chat_id_,msg.id_,'•الايدي بالصوره معطل   \n• ᴜsᴇʀ 𖦹'..UserNameID..' .\n• ᴍsɢs 𖦹'..msgs..' .\n• sᴛᴀ 𖦹 '..msg.TheRank..' .\n• ɪᴅsᴛᴀ 𖦹  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @QZZZYQ .')
+		sendMsg(msg.chat_id_,msg.id_,'•الايدي بالصوره معطل   \n• USE 𖦹'..UserNameID..' .\n• MSG 𖥳'..msgs..' .\n• STA 𖦹 '..msg.TheRank..' .\n• iD 𖥳  '..msg.sender_user_id_..' .\n𖣤 ᴄʜ 𓄹𓄼 @QZZZYQ .')
 		end
 end
 
